@@ -21,12 +21,14 @@ namespace DailyReport
             string yourCourse = Console.ReadLine();
             Console.WriteLine("Your course is: " + yourCourse);
 
+            int pageNum = 0;
             Console.WriteLine("What page number?");
-            string pageNum = Console.ReadLine();
+            pageNum = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Your page number is: " + pageNum);
 
+            bool needHelp = true;
             Console.WriteLine("Do you need help with anthing? Please answer \" true \" or \"false\"");
-            string needHelp = Console.ReadLine();
+            string needHelpstatus = Convert.ToString(needHelp);
             Console.WriteLine("Your answer is: " + needHelp);
 
             Console.WriteLine("Where there any positive experiences you'd like to share? Please give specifics");
@@ -37,8 +39,9 @@ namespace DailyReport
             string feedBack = Console.ReadLine();
             Console.WriteLine("You responded: " + feedBack);
 
+            int stuHours = 0;
             Console.WriteLine("How many hourse did you study today?");
-            string stuHours = Console.ReadLine();
+            stuHours = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("You studied: " + stuHours);
 
             string tnks = "Thank you for you answers. An Instructor will respond to this shortly. Have a great day!";
@@ -46,6 +49,7 @@ namespace DailyReport
 
             Console.ReadLine();
 
+      
         }
     }
 }
