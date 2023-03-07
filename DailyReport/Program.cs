@@ -25,10 +25,9 @@ namespace DailyReport
             Console.WriteLine("What page number?");
             pageNum = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Your page number is: " + pageNum);
-
-            bool needHelp = true;
+            
             Console.WriteLine("Do you need help with anthing? Please answer \" true \" or \"false\"");
-            string needHelpstatus = Convert.ToString(needHelp);
+            bool needHelp = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Your answer is: " + needHelp);
 
             Console.WriteLine("Where there any positive experiences you'd like to share? Please give specifics");
